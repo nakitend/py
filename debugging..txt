@@ -1,0 +1,34 @@
+What is debugging?
+refers to the process of finding and fixing error in your source code.
+What is bug? 
+is a written code which doesnt give us diresired output.
+is aglitch in software that prevents a programmfrom achieving the desired output.
+is a mistake that prevents the programme to be excuted properly.
+TYPES OF BUGS.
+SYNTAX ERRORS
+are errors that violates the syntax rules e.g spellingerrors,arguments
+LOGICAL ERRORS
+are errors that occurs when stops taken to solve a problem are not well done.OR occur when the process of solving the task at
+DESIGN ERRORS.
+are errors introduced into the system during the design process causing the progamm to do what it is progammed to do
+RUNTIME ERRORS.
+these occurs when the application tries to perform an operation that isnt allowed.
+and they are only discovered at the point of running a script or progam.
+e.g when you divide any number by zero(0),any calculation with a string
+BUILDTIME ERRORS.
+
+
+DEBUGGING CYCLE
+writing the code
+checking if it is working
+if it is not working u do debugging
+then debugging
+then u keep coding or go back to step operation
+BUG CYCLE.
+coding.
+try to break the code or testing.
+if you suceed in breaking it ,then you 
+
+TIPS FOR DEBUGGING
+chatch your bugs early as possible
+if the bug is not catch early it gets harder because the detials are not in your  
