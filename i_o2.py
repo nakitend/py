@@ -27,13 +27,13 @@ def paye(salary,name,age,location,occupation):
 
     
 print("Your welcome! ")
-name = raw_input("please input your name here: ")
+#name = raw_input("please input your name here: ")
 age = input("please enter your year of birth: ")
-location = raw_input("please input your location: ")
-occupation = raw_input("please input your occupation: ")
+#location = raw_input("please input your location: ")
+#occupation = raw_input("please input your occupation: ")
 salary = input ("please input your salary here: ")
 print("Thank you sir/mada! ")
 
 
-paye(salary,name,age,location,occupation)
+#paye(salary,name,age,location,occupation)
    

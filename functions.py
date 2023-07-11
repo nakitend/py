@@ -34,6 +34,7 @@ Declaring my_tuple function.
 '''
 
 def my_tuple():
+    print(numbers)
     my_tuple = (10,20,30,40,50)
     zebra = {'name':'tongs','legs': 4, 'color': 'black & white', 'sex': 'male'}
     print(zebra.keys())

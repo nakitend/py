@@ -11,7 +11,7 @@ def add(num1,num2):
 add(3,7)
 add(4,6)
 
-def sub (num1,num2):
+def sub(num1,num2):
     num3 = num1-num2
     print(num3)
 
