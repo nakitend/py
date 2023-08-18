@@ -1,0 +1,43 @@
+/* body {
+    background-image:url('../images/img1.webp');
+    background: cover;
+} */
+
+h1{
+    /* background-color:; */
+    font-size: 40px;
+
+
+}
+
+.back{
+    background-image: url("../images/bcf.avif");
+    width: auto;
+    height: auto;
+     background-size: cover; 
+    background-repeat: no-repeat;
+    opacity: 80%;
+}
+
+.hanisha {
+    text-align: left;
+    color: white;
+    background-image: url("../images/bcf.avif");
+    width: auto;
+    height: auto;
+    background-size: cover; 
+    background-repeat: no-repeat;
+    opacity: 80%;
+ 
+}
+.kit-container{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center; 
+    height:auto;
+    }
+
+    .logo{
+        width: 50px;
+    }

@@ -1,0 +1,68 @@
+{% load static %}
+{% load crispy_forms_tags %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <title style="color: black;">BeRealMotorspareparts</title>
+  <link rel="stylesheet" href="{% static 'css/login.css' %}">
+  <!-- Raleway font -->
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet"/>
+  <!-- Montserrat font -->
+  <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark ">
+    <a class="nav-link" href="">
+      <img class="logo" src="{% static 'images/logo3.jpeg' %}" style="width: 50px; height: 50px;" />
+      <h1 class="navbar-brand" style="font-size: 25px; margin-left: 300px;">BeRealMotorspareparts Company</h1>
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="nav navbar-nav ml-auto">
+        {% if user.is_authenticated %}
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'login' %}">LOGIN</a>
+        </li>
+        {% endif %}
+      </ul>
+  </nav>
+  <h1 style="color: white;"></h1>
+  <div id="back">
+    {% block content %}
+    <h3 style="text-align: center;"> WELCOME TO BEREALMOTORS & SPAREPARTS</h3>
+    <form id="form" method="POST"
+      style="border-radius: 25px; border: 2px solid #19d4fc; padding: 20px; width: 400px; height: 400px; margin-top: 60px;">
+      {% csrf_token %}
+      {{ form | crispy }}
+      <br>
+      <input type="submit" name="Submit" class="btn  btn-success btn-block" value="LOGIN"> <br>
+    </form>
+    <br></br>
+    {% endblock %}
+  </div>
+  <footer>
+    <div class="footer-content">
+    </div>
+    <div class="footer-bottom">
+      <ul class="socials">
+        <li><a href="#"><i class="fa fa-linkedin-square"></i></a></li>
+        <li><a href="#"><i class="fa fa-github-square"></i></a></li>
+        <li><a href="#"><i class="fa fa-facebook-square"></i></a></li>
+        <li><a href="#"><i class="fa fa-twitter-square"></i></a></li>
+      </ul>
+      <p>Copyright &copy;2023 BeRealMotorspareparts. designed by<span> nakitende hanisha</span></p>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+    crossorigin="anonymous"></script>
+</body>
+</html>
