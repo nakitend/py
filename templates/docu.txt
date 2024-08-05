@@ -1,0 +1,109 @@
+# BeRealMotors Spare Parts Application Documentation
+
+## Table of Contents
+
+1. Introduction
+2. Installation
+3. User Registration and Authentication
+4. Navigating the Interface
+5. Managing Spare Parts
+6. Recording Sales
+7. Dashboard Usage
+8. Generating Receipts
+9. Editing and Deleting Records
+10. Tips and Best Practices
+11. Troubleshooting
+12. Feedback and Support
+13. Updates and Enhancements
+14. Glossary and Definitions
+
+## 1. Introduction
+
+Welcome to the BeRealMotors Spare Parts Application documentation. This guide will help you navigate through the various features of the application,
+ enabling you to manage spare parts, record sales, and utilize the dashboard effectively.
+
+## 2. Installation
+
+To install the application, follow these steps:
+
+1. Clone the repository from [GitHub link].
+2. Navigate to the project directory.
+3. Set up a virtual environment: `python -m venv venv`.
+4. Activate the virtual environment: `source venv/bin/activate` (Linux/Mac) or `venv\Scripts\activate` (Windows).
+5. Install required packages: `pip install -r requirements.txt`.
+6. Run migrations: `python manage.py migrate`.
+7. Create a superuser: `python manage.py createsuperuser`.
+8. Start the development server: `python manage.py runserver`.
+
+## 3. User Registration and Authentication
+
+To use the application, you need to create an account and log in. 
+If you've forgotten your password, you can reset it using the provided functionality.
+
+## 4. Navigating the Interface
+
+The application interface consists of [Spareparts,Stock,Sales,Receipt]. Use the navigation menu to access different functionalities.
+
+## 5. Managing Spare Parts
+
+To manage spare parts, follow these steps:
+
+1. Log in to your account.
+2. Navigate to the "Spare Parts" section.
+3. Click "Add New Part" to add a new spare part.
+4. Fill in the required details: part name, part number, price, etc.
+5. Save the entry.
+
+## 6. Recording Sales
+
+To record a sales transaction:
+
+1. Log in to your account.
+2. Go to the "Sales" section.
+3. Click "Record New Sale."
+4. Select the buyer, part(s), quantity, and payment details.
+5. Save the transaction.
+
+## 7. Dashboard Usage
+
+The dashboard provides insights into sales trends and stock levels. Explore the different graphs and interactive features to gain valuable information about your business.
+
+## 8. Generating Receipts
+
+After recording a sale, you can generate a receipt:
+
+1. Navigate to the "Sales" section.
+2. Find the sale you want a receipt for.
+3. Click "Generate Receipt" to view and download the receipt.
+
+## 9. Editing and Deleting Records
+
+To edit or delete records:
+
+1. Find the record you want to edit or delete.
+2. Use the provided options to make changes or remove the entry.
+
+## 10. Tips and Best Practices
+
+- Double-check all entries before saving.
+- Keep your inventory up to date to reflect accurate stock levels.
+- Regularly review the dashboard to identify trends.
+
+## 11. Troubleshooting
+
+- If you encounter any errors, [contact support information on 0750828253].
+
+## 12. Feedback and Support
+
+We value your feedback! If you have suggestions, questions, or issues, contact us at [nakitendehanisha6@gmail.com].
+
+## 13. Updates and Enhancements
+
+Stay informed about updates and new features by [subscribing to my social media handles / visiting my website].
+
+## 14. Glossary and Definitions
+
+- **Spare Part:** A component used in vehicles for replacement or repair.
+- **Dashboard:** An interactive interface showing sales and inventory data.
+
+Thank you for using the BeRealMotors Spare Parts Application! I hope this guide helps you navigate and utilize all the features effectively.

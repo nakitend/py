@@ -1,0 +1,48 @@
+{% extends 'sparepart/base.html'%} {% block content%}
+<br></br>
+
+<div class="container">
+  <h1 class="text-center">SPAREPARTS IN STOCK</h1>
+  <br>
+
+  <div class="container">
+    <form action="" method="GET">
+      {{product_filters.form}}
+      <input style="text-align: center;" type="submit" value="Search SparePart" class="btn btn-dark btn" />
+    </form>
+  </div>
+
+  <br>
+  <table class="table">
+    <thead class="thead-dark">
+      <tr>
+        <th scope="col">Category</th>
+        <th scope="col">Part Name</th>
+        <th scope="col">Branch Name</th>
+        <th scope="col">Item Orgin</th>
+        <th scope="col">Part Number</th>
+        <th scope="col">Quantity</th>
+        <th scope="col">Unit Price(UGX)</th>
+        <th scope="col">Detail</th>
+      </tr>
+    </thead>
+    {% for product in products%}
+    <tbody>
+      <tr>
+        <td>{{product.Category_name}}</td>
+        <td>{{product.part_name}}</td>
+        <td>{{product.branch_name}}</td>
+        <td>{{product.items_orgin}}</td>
+        <td>{{product.id}}</td>
+        <td>{{product.total_quantity}}</td>
+        <td>UGX{{product.unit_price}}</td>
+        <!-- below we are handing the buy item button and it is handled by the product_detail -->
+        <td><a href="{% url 'product_detail' product.id %}"><input type="submit" value="SELL ITEM"
+              class="btn btn-dark btn" type="button" /></a></td>
+        <!-- <td><a href=""><input type="submit" value="Delete ITEM" class="btn btn-danger btn" type="button" /></a></td> -->
+      </tr>
+    </tbody>
+    {% endfor %}
+  </table>
+</div>
+{% endblock%}
